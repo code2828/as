@@ -23,8 +23,8 @@ _n2s_loop:
 	inc r9
 	cmp rax, 0
 	jnz _n2s_loop
-	
 	mov rdx, _n2s_out
+	mov r8, r9
 _n2s_output:
 	pop qword [rdx]
 	dec r9
@@ -34,7 +34,8 @@ _n2s_output:
 	mov rax, 0x02000004
 	mov rdi, 1
 	mov rsi, _n2s_out
-	mov rdx, 20
+	;mov rdx, 20 ; 20 is too much!
+	mov rdx, r8
 	syscall
 	pop r9
 	pop r8
