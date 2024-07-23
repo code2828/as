@@ -1,4 +1,4 @@
-; calculate primes less than 1000
+; calculate primes less than a hardcoded number
     global _main
     section .text
 _main:
