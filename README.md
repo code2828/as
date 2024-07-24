@@ -1,2 +1,2 @@
 # Assembly playground.
-# Assembly playground.
+Yes, asm is fun indeed.
